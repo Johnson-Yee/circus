@@ -66,28 +66,29 @@ public class Circus {
         System.out.println("Number of animals: " + animalArrayList.size());
         System.out.println("index of louie: " + animalArrayList.indexOf(louie));
 
-        animalArrayList.sort(Animal.AnimalNameComparator);
-
-        for(Animal a: animalArrayList){
-            System.out.println(a);
-        }
-        System.out.println("index of louie: " + animalArrayList.indexOf(louie));
-        makeAnimalsTalk();
-        System.out.println("Total value of equipments " + calculateValue(equipments));
-        System.out.println("Total value of animals " + calculateValue(animals));
-        Cage<Duck> duckCage = new Cage<>();
-        Duck duck = new Duck("hugh");
-        duckCage.lockUp(duck);
-        Parrot parrot = new Parrot("Parasjit");
-        Cage<Parrot> parrotCage = new Cage<>();
-        parrotCage.lockUp(parrot);
-
-        ArrayList<Cage> cages = new ArrayList<>();
-        cages.add(duckCage);
-        cages.add(parrotCage);
-
-        for(Cage c: cages) {
-            c.release();
-        }
+//        animalArrayList.sort(Animal.AnimalNameComparator);
+//
+//        for(Animal a: animalArrayList){
+//            System.out.println(a);
+//        }
+//        System.out.println("index of louie: " + animalArrayList.indexOf(louie));
+//        makeAnimalsTalk();
+//        System.out.println("Total value of equipments " + calculateValue(equipments));
+//        System.out.println("Total value of animals " + calculateValue(animals));
+//        Cage<Duck> duckCage = new Cage<>();
+//        Duck duck = new Duck("hugh");
+//        duckCage.lockUp(duck);
+//        Parrot parrot = new Parrot("Parasjit");
+//        Cage<Parrot> parrotCage = new Cage<>();
+//        parrotCage.lockUp(parrot);
+//        //Tiger tiger = new Tiger("Shick");
+//
+//        ArrayList<Cage> cages = new ArrayList<>();
+//        cages.add(duckCage);
+//        cages.add(parrotCage);
+//
+//        for(Cage c: cages) {
+//            c.release();
+//        }
     }
 }
